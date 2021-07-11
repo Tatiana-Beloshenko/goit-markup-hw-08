@@ -1,0 +1,107 @@
+.header-nav {
+    border-bottom: 1px solid #ECECEC;
+}
+/* распологаем меню навигации по гризонтали*/
+.main-nav {
+    display: flex;
+    align-items: center;
+    
+}
+.nav-adress {
+    display: flex;
+    align-items: center;
+}
+/* шрифт,цвет логотипа */
+.main-nav__web {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.main-nav__logo {
+    color: #000000;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+/* шрифт,цвет, расположение ссылок в меню навигации */
+
+.main-nav__site {
+    display: flex;
+    margin-left: 93px;
+   
+}
+.main-nav__item {
+    margin-left: 50px;
+    position: relative;
+}
+.main-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--title-text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    color: var(--accent-color);
+}
+}
+.main-nav__link--active {
+    color: var(--accent-color);
+
+
+&::after{
+    display: flex;
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+    border-bottom: 4px solid var(--accent-color);
+    border-radius: 2px;
+}
+}
+.site-contact {
+    display: flex;
+    margin-left: auto;
+    align-items: center ;
+}
+.site-contact__item {
+    margin-left: 50px ;
+}
+.site-contact__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+&:hover,
+&:focus {
+    color: var(--accent-color);
+}
+}
+.site-contact__envelope {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+}
+.site-contact__smartphone {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+}
