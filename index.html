@@ -13,19 +13,13 @@
 <link rel="stylesheet" href="./css/main.min.css"/>
 </head>
 <body>
-  <header class="header-nav">
+    <header class="header-nav">
         <div class="container nav-adress">
         <!--навигация по сайту, контакты-->
-      <nav class="main-nav">
+        <nav class="main-nav">
         <a href="" class="main-nav__logo">
         <span class="main-nav__web">Web</span><span>Studio</span>
         </a>
-        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg width="40" height="40" aria-label="переключатель мобильного меню">
-                <use class="icon-menu" href="./img/iconmobmenu.svg#icon-menu">
-                </use>
-            </svg>
-        </button>
             <ul class="main-nav__site">
                 <li class="main-nav__item">
                     <a href="" class="main-nav__link main-nav__link--active">Студия</a>
@@ -64,19 +58,19 @@
     
         </div>
     </header>
-    <main>
+    <!--<main>-->
         <section class="hero overlay ">
             <div class="container">
             <!--герой-->
-               <h1 class="hero__title">
+                <h1 class="hero__title">
                 Эффективные решения<br>для вашего бизнеса
                 </h1>
                      <button data-modal-open type="button" class="hero__button">Заказать услугу</button>
         </div>
         </section>
-        <section class="section">
+        <!--<section class="section">
             <div class="container">
-            <!--описание особенностей веб-студии-->
+            описание особенностей веб-студии
             <h2 hidden>Особенности</h2>
             <ul class="features">
                 <li class="features__item">
@@ -124,63 +118,69 @@
         </section>
         <section class="section specification">
             <div class="container">
-            <!--чем занимается веб-студия-->
+            чем занимается веб-студия
             <h2 class="section__title" >Чем мы занимаемся</h2>
             <ul class="specification-image">
                 
                 <li class="specification-image__item">
                     <div class="specification-image__application">
                         <picture>
-                            <source srcset="./img/desktop/imgv1xdes.jpg 1x,
-                                                 ./img/desktop/imgv2xdes.jpg 2x" media="(min-width: 1200px)">
-                            <img src="./img/imgv.jpg" alt="ПК, планшет,клавиатура,блокнот на столе" width="370" />
+                            <source media="(min-width: 1200px)" srcset="./img/webpdes/imgv1xdes.webp 1x, ./img/webpdes/imgv2xdes.webp 2x"
+                            type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./img/desktop/imgv1xdes.jpg 1x, ./img/desktop/imgv2xdes.jpg 2x">
+                        
+                    <img src="./img/imgv.jpg" alt="ПК, планшет,клавиатура,блокнот на столе" width="370"/>
                         </picture>
-                    
                     <h3 class="specification-image__title">Десктопные приложения</h3>
                 </div>
                 </li>
            
                 <li class="specification-image__item">
                     <div class="specification-image__application">
-                        <picture>
-                            <source srcset="./img/desktop/imgj1xdes.jpg 1x,
-                                                     ./img/desktop/imgj2xdes.jpg 2x" media="(min-width: 1200px)">
-                        <img src="./img/imgj.jpg" alt="Смартфон и ноутбук" width="370" />
-                        </picture>
-                    
+<picture>
+                    <source media="(min-width: 1200px)" srcset="./img/webpdes/imgj1xdes.webp 1x, ./img/webpdes/imgj2xdes.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 1200px)" srcset="./img/desktop/imgj1xdes.jpg 1x, ./img/desktop/imgj2xdes.jpg 2x">
+                    <img src="./img/imgj.jpg" alt="Смартфон и ноутбук" width="370"/>
+</picture>
                     <h3 class="specification-image__title">Мобильные приложения</h3>
                 </div>
                 </li>
                 <li class="specification-image__item">
                     <div class="specification-image__application">
-                        <picture>
-                            <source srcset="./img/desktop/imgd1xdes.jpg 1x,
-                                                   ./img/desktop/imgd2xdes.jpg 2x" media="(min-width: 1200px)">
-                            <img src="./img/imgd.png" alt="Ноутбук, мышь, планшет" width="370" />
-                        </picture>
-                    
+<picture>
+    <source media="(min-width: 1200px)" srcset="./img/webpdes/imgd1xdes.webp 1x, ./img/webpdes/imgd2xdes.webp 2x"
+        type="image/webp">
+    <source media="(min-width: 1200px)" srcset="./img/desktop/imgd1xdes.jpg 1x, ./img/desktop/imgd2xdes.jpg 2x">
+
+                    <img src="./img/imgd.png" alt="Ноутбук, мышь, планшет" width="370"/>
+</picture>
                     <h3 class="specification-image__title">Дизайнерские решения</h3>
                 </div>
                 </li>
             </ul>
         </div>
         </section>
-        <section class="section team">
+    <!--    <section class="section team">
             <div class="container">
-            <!--сотрудники веб-студии--> 
+            сотрудники веб-студии
             <h2 class="section__title">Наша команда</h2>
             <ul class="team-image">
                 <li class="team-image__item">
+
                     <picture>
-                        <source srcset="./img/desktop/igor1xdes.jpg 1x,
-                         ./img/desktop/igor2xdes.jpg 2x" media="(min-width: 1200px)">
-                         <source srcset="./img/imgtab/igor1xtab.jpg 1x,
-                          ./img/imgtab/igor2xtab.jpg 2x" media="(min-width: 768px)">
-                          <source srcset="./img/imgmob/igor1xmob.jpg 1x,
-                           ./img/imgmob/igor2xmob.jpg 2x" media="(min-width: 480px">
-                        <img src="./img/igor.jpg" alt="Игорь Демьяненко" width="270" />
+                        <source media="(min-width: 1200px)" srcset="./img/webpdes/igor1xdes.webp 1x, ./img/webpdes/igor2xdes.webp 2x"
+                            type="image/webp">
+                        <source media="(min-width: 1200px)" srcset="./img/desktop/igor1xdes.jpg 1x, ./img/desktop/igor2xdes.jpg 2x">
+                       <source media="(min-width: 768px)" srcset="./img/webptab/igor1xtab.webp 1x, ./img/webptab/igor2xtab.webp 2x"
+                            type="image/webp">
+                       <source media="(min-width: 768px)" srcset="./img/imgtab/igor1xtab.jpg 1x, ./img/imgtab/igor2xtab.jpg 2x">
+                    <source media="(min-width: 480px)" srcset="./img/webpmob/igor1xmob.webp 1x, ./img/webpmob/igor2xmob.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 480px)" srcset="./img/imgmob/igor1xmob.jpg 1x, ./img/imgmob/igor2xmob.jpg 2x">
+
+                    <img src="./img/igor.jpg" alt="Игорь Демьяненко" width="270"/>
                     </picture>
-                    
                     <div class="team-image__card">
                     <h3 class="team-image__name">Игорь Демьяненко</h3>
                     <p lang="en" class="team-image__discription">Product Designer</p>
@@ -221,16 +221,20 @@
                 </div>
                 </li>
                 <li class="team-image__item">
-                    <picture>
-                        <source srcset="./img/desktop/olga1xdes.jpg 1x,
-                                             ./img/desktop/olga2xdes.jpg 2x" media="(min-width: 1200px)">
-                        <source srcset="./img/imgtab/olga1xtab.jpg 1x,
-                                              ./img/imgtab/olga2xtab.jpg 2x" media="(min-width: 768px)">
-                        <source srcset="./img/imgmob/olga1xmob.jpg 1x,
-                                               ./img/imgmob/olga2xmob.jpg 2x" media="(min-width: 480px">
-                        <img src="./img/olga.jpg" alt="Ольга Репина" width="270" />
-                    </picture>
-                   
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/webpdes/olga1xdes.webp 1x, ./img/webpdes/olga2xdes.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 1200px)" srcset="./img/desktop/olga1xdes.jpg 1x, ./img/desktop/olga2xdes.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/webptab/olga1xtab.webp 1x, ./img/webptab/olga2xtab.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 768px)" srcset="./img/imgtab/olga1xtab.jpg 1x, ./img/imgtab/olga2xtab.jpg 2x">
+                    <source media="(min-width: 480px)" srcset="./img/webpmob/olga1xmob.webp 1x, ./img/webpmob/olga2xmob.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 480px)" srcset="./img/imgmob/olga1xmob.jpg 1x, ./img/imgmob/olga1xmob.jpg 2x">
+
+
+                    <img src="./img/olga.jpg" alt="Ольга Репина" width="270"/>
+                </picture>
                     <div class="team-image__card">
                     <h3 class="team-image__name">Ольга Репина</h3>
                     <p lang="en" class="team-image__discription">Frontend Developer</p>
@@ -272,16 +276,19 @@
                 </div>
                 </li>
                 <li class="team-image__item">
-                    <picture>
-                        <source srcset="./img/desktop/nik1xdes.jpg 1x,
-                                     ./img/desktop/nik2xdes.jpg 2x" media="(min-width: 1200px)">
-                        <source srcset="./img/imgtab/nik1xtab.jpg 1x,
-                                        ./img/imgtab/nik2xtab.jpg 2x" media="(min-width: 768px)">
-                        <source srcset="./img/imgmob/nik1xmob.jpg 1x,
-                                        ./img/imgmob/nik2xmob.jpg 2x" media="(min-width: 480px">
-                        <img src="./img/nik.jpg" alt="Николай Тарасов" width="270" />
-                    </picture>
-                    
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/webpdes/nik1xdes.webp 1x, ./img/webpdes/nik2xdes.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 1200px)" srcset="./img/desktop/nik1xdes.jpg 1x, ./img/desktop/nik2xdes.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/webptab/nik1xtab.webp 1x, ./img/webptab/nik2xtab.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 768px)" srcset="./img/imgtab/nik1xtab.jpg 1x, ./img/imgtab/nik2xtab.jpg 2x">
+                    <source media="(min-width: 480px)" srcset="./img/webpmob/nik1xmob.webp 1x, ./img/webpmob/nik2xmob.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 480px)" srcset="./img/imgmob/nik1xmob.jpg 1x, ./img/imgmob/nik2xmob.jpg 2x">
+
+                    <img src="./img/nik.jpg" alt="Николай Тарасов" width="270"/>
+                </picture>
                     <div class="team-image__card">
                     <h3 class="team-image__name">Николай Тарасов</h3>
                     <p lang="en" class="team-image__discription">Marketing</p>
@@ -322,19 +329,19 @@
                 </div>   
                 </li>
                 <li class="team-image__item">
-                    <picture>
-                        <source srcset="./img/desktop/maikl1xdes.jpg 1x,                                                     
-                           ./img/desktop/maikl2xdes 2x"
-                            media="(min-width: 1200px)">
-                        <source srcset="./img/imgtab/maikl1xtab.jpg 1x,
-                                ./img/imgtab/maikl2xtab.jpg 2x"
-                            media="(min-width: 768px)">
-                        <source srcset="./img/imgmob/mikl1xmob.jpg 1x,
-                               ./img/imgmob/maikl2xmob.jpg 2x"
-                            media="(min-width: 480px">
-                        <img src="./img/maikl.jpg" alt="Михаил Ермаков" width="270" />
-                    </picture>
-                   
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/webpdes/maikl1xdes.webp 1x, ./img/webpdes/nmaikl2xdes.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 1200px)" srcset="./img/desktop/maikl1xdes.jpg 1x, ./img/desktop/maikl2xdes.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/webptab/maikl1xtab.webp 1x, ./img/webptab/maikl2xtab.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 768px)" srcset="./img/imgtab/maikl1xtab.jpg 1x, ./img/imgtab/maikl2xtab.jpg 2x">
+                    <source media="(min-width: 480px)" srcset="./img/webpmob/mikl1xmob.webp 1x, ./img/webpmob/maikl2xmob.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 480px)" srcset="./img/imgmob/mikl1xmob.jpg 1x, ./img/imgmob/maikl2xmob.jpg.jpg 2x">
+
+                    <img src="./img/maikl.jpg" alt="Михаил Ермаков" width="270"/>
+                </picture>
                     <div class="team-image__card">
                     <h3 class="team-image__name">Михаил Ермаков</h3>
                     <p lang="en" class="team-image__discription">UI Designer</p>
@@ -380,7 +387,7 @@
         </section>
         <section class="section"> 
             <div class="container">
-            <!--постоянные клиенты-->
+            постоянные клиенты
             <h2 class="section__title" >Постоянные клиенты</h2>
             <ul class="client">
                 <li class="client__item">
@@ -429,30 +436,6 @@
         </div>
         </section>
     </main>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-                <button class="menu-toggle js-close-menu">
-                    <svg width="40" height="40" aria-label="переключатель мобильного меню">
-                        <use class="icon-close" href="./img/iconmobmenu.svg#icon-close">
-                        </use>
-                    </svg>
-                </button>
-                <ul class="mobile-menu">
-                    <li><a href="" class="mobile-menu__link mobile-menu__link--active">Студия</a></li>
-                    <li><a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
-                    <li><a href="" class="mobile-menu__link">Контакты</a></li>
-                </ul>
-                    <ul class="mobile-contact">
-                    <li><a href="tel:+380961111111" class="mobile-contact__link mobile-contact__link--tel">+38 096 111 11 11</a></li>
-                    <li><a href="mailto:info@devstudio.com" class="mobile-contact__link mobile-contact__link--mail">info@devstudio.com</a></li>
-                    </ul>
-                    <ul class="mobile-social"> 
-                        <li><a href="" class="mobile-social__link">Instagram</a></li>
-                        <li><a href="" class="mobile-social__link">Twitter</a></li>
-                        <li><a href="" class="mobile-social__link">Facebook</a></li>
-                        <li><a href="" class="mobile-social__link">LinkedIn</a></li>
-                    </ul>
-                
-            </div>
     <footer class="footer">
         <div class="container footer-container">
             <div class="itemadress footer-adress">
@@ -478,7 +461,7 @@
         
        </div>
             <div class="itemadress socialnetadress">
-            <!--Присоединяйтесь в социальных сетях-->
+            Присоединяйтесь в социальных сетях
             <h3 class="join-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
             <ul class="socialnet-footer">
                 <li class="socialnet-footer__item"> 
@@ -516,8 +499,8 @@
             </ul>
             </div>
             <div class="subscribe">
-                <!--Подпишитесь на рассылку-->
-               <p class="subscribe-title">Подпишитесь на рассылку</p>
+                Подпишитесь на рассылку
+                <p class="subscribe-title">Подпишитесь на рассылку</p>
                 <form class="js-speaker-form block-form">
                     
                     <input type="email" name="email" id="email" class="block-form__input" placeholder="E-mail"/>
@@ -528,7 +511,7 @@
                 </form>
             </div>
         </div>   
-    </footer>-->    
+    </footer>    
     <div class="modal is-hidden" data-modal>
         <div class="modal-content">
                   <button class="close-button" data-modal-close>
@@ -537,7 +520,7 @@
                           </use>
                       </svg>
                   </button>
-                <!--Форма отправки данных в модальном окне-->
+                Форма отправки данных в модальном окне
                   <form class="modal-form">
                       <p class="title-send">Оставьте свои данные, мы вам перезвоним</p>
                       <div class="field-form">
@@ -598,12 +581,6 @@
             );
             });
         })();
-    </script>
-    <script 
-    defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js">
     </script>
 </body>
 </html> 
