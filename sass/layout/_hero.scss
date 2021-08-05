@@ -4,7 +4,7 @@
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/../img/imgmob/Header1xmob.jpg);
+    url(../img/imgmob/Header1xmob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,32 +12,32 @@
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/../img/imgmob/Header2xmob.jpg);
+      url(../img/imgmob/Header2xmob.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/../img/imgtab/Header1xtab.jpg);
+      url(../img/imgtab/Header1xtab.jpg);
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .overlay {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/../img/imgtab/Header2xtab.jpg);
+        url(../img/imgtab/Header2xtab.jpg);
     }
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/../img/desktop/header1xdes.jpg);
+      url(../img/desktop/header1xdes.jpg);
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .overlay {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/../img/desktop/header2xdes.jpg);
+        url(../img/desktop/header2xdes.jpg);
     }
   }
 }
