@@ -13,14 +13,11 @@
   .project__item {
     width: 354px;
     margin-left: 30px;
-    //flex-basis: calc(100% - 60px) / 2;
   }
 }
-@media screen and (min: width 1200px) {
+@media screen and (min-width: 1200px) {
   .project__item {
     width: 370px;
-    margin-right: 30px;
-    margin-bottom: 30px;
   }
 }
 
