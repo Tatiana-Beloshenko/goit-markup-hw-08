@@ -577,6 +577,11 @@ p {
   fill: #000000;
 }
 
+.burger-btn:hover .burger-btn__icon,
+.burger-btn:focus .burger-btn__icon {
+  fill: var(--accent-color);
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -614,6 +619,11 @@ p {
   width: 40px;
   height: 40px;
   fill: var(--title-text-color);
+}
+
+.close-btn:hover .close-btn__icon,
+.close-btn:focus .close-btn__icon {
+  fill: var(--accent-color);
 }
 
 .mobile-menu__close-btn {
@@ -691,7 +701,11 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.social-list__item:not(:first-child):not(:first-child) {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 10px;
 }
 
 .overlay {
@@ -1307,7 +1321,7 @@ p {
 }
 
 .block-form__input {
-  width: 450px;
+  min-width: 450px;
   height: 50px;
   padding-left: 16px;
   margin-right: 12px;
