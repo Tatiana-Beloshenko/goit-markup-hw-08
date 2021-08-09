@@ -32,6 +32,11 @@
                 </li>
             </ul>
         </nav>
+        <button class="burger-btn" data-menu-open>
+            <svg class="burger-btn__icon">
+                <use href="./img/iconmobmenu.svg#icon-menu"></use>
+            </svg>
+        </button>
         
         <ul class="site-contact">
             <li class="site-contact__item">
@@ -56,6 +61,41 @@
             </li>
         </ul>
     
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+            <button class="close-btn mobile-menu__close-btn" data-menu-close>
+                <svg class="close-btn__icon">
+                    <use href="./img/close-defs.svg#icon-icon-close"></use>
+                </svg> 
+            </button>
+            <ul class="nav-list">
+                <li class="nav-list__item">
+                    <a href="" class="nav-list__link nav-list__link--active">Студия</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="" class="nav-list__link">Контакты</a></li>
+                
+            </ul>
+            <ul class="menu-contact">
+                
+                <li class="menu-contact__item">
+            
+                    <a href="tel:+380961111111" class="menu-contact__link menu-contact__link--tel menu-contact__link--active">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="menu-contact__item">
+                
+                    <a href="mailto:info@devstudio.com" class="menu-contact__link menu-contact__link--mail">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -582,5 +622,6 @@
             });
         })();
     </script>
+    <script src="./js/menu.js"></script>
 </body>
 </html> 
