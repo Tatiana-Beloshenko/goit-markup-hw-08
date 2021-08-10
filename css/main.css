@@ -1560,8 +1560,8 @@ p {
 
 @media screen and (max-width: 480px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    max-height: 609px;
   }
 }
 
