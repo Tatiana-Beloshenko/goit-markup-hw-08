@@ -1626,6 +1626,13 @@ p {
   padding: 40px;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal-form {
+    max-width: 370px;
+    min-height: 342px;
+  }
+}
+
 .title-send {
   font-size: 20px;
   font-weight: 700;
@@ -1670,7 +1677,7 @@ p {
 }
 
 .field-form textarea {
-  width: 448px;
+  max-width: 448px;
   height: 120px;
   padding: 11px 12px 11px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1742,10 +1749,17 @@ textarea:focus {
 label.label-policy {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  label.label-policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .label-policy__link {
