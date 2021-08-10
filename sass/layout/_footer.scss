@@ -179,6 +179,7 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .block-form__input {
   min-width: 450px;
   height: 50px;
@@ -194,6 +195,7 @@
     color: var(--main-bg-color);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .block-form__input {
     width: 358px;

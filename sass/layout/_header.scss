@@ -137,8 +137,6 @@
 
 @media screen and (min-width: 768px) {
   .site-contact__link {
-    padding-top: 45px;
-    padding-bottom: 45px;
     color: var(--main-text-color);
     font-size: 12px;
     font-weight: 500;
@@ -149,6 +147,16 @@
     &:focus {
       color: var(--accent-color);
     }
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-contact__link--tel {
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-contact__link--mail {
+    padding-top: 21px;
   }
 }
 
@@ -235,6 +243,7 @@
   visibility: hidden;
   pointer-events: none;
   transition: opacity 500ms linear, visibility 500ms linear;
+  overflow-y: scroll;
 }
 
 .mobile-menu.is-open {

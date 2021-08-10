@@ -499,8 +499,6 @@ p {
 
 @media screen and (min-width: 768px) {
   .site-contact__link {
-    padding-top: 45px;
-    padding-bottom: 45px;
     color: var(--main-text-color);
     font-size: 12px;
     font-weight: 500;
@@ -509,6 +507,18 @@ p {
   }
   .site-contact__link:hover, .site-contact__link:focus {
     color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-contact__link--tel {
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-contact__link--mail {
+    padding-top: 21px;
   }
 }
 
@@ -600,6 +610,7 @@ p {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 500ms linear, visibility 500ms linear;
+  overflow-y: scroll;
 }
 
 .mobile-menu.is-open {
@@ -1544,6 +1555,14 @@ p {
   background-color: #00000033;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .modal.is-hidden {
@@ -1553,12 +1572,6 @@ p {
 
 .modal.is-hidden .modal-content {
   transform: translate(-50%, -50%) scale(0.9);
-}
-
-@media screen and (max-width: 1199px) {
-  .modal-content {
-    max-width: 450px;
-  }
 }
 
 .modal-content {
@@ -1618,6 +1631,12 @@ p {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (max-width: 1199px) {
+  .title-send {
+    padding-right: 15px;
+  }
 }
 
 .field-form {
@@ -1752,6 +1771,6 @@ label.label-policy {
 }
 
 .field-form__button:hover, .field-form__button:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 /*# sourceMappingURL=main.css.map */
