@@ -13,8 +13,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //padding-top: 10px;
-  //padding-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   .nav-adress {
@@ -281,15 +279,18 @@
   top: 10px;
   right: 15px;
 }
+@media screen and (max-width: 767px) {
+  .mobile-menu__container {
+    position: relative;
+    padding: 48px 25px;
 
-.mobile-menu__container {
-  position: relative;
-  padding-top: 48px;
-  padding-left: 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
-.nav-list {
-  margin-bottom: 302px;
-}
+
 .nav-list__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -303,6 +304,7 @@
 .nav-list__link--active {
   color: var(--accent-color);
 }
+
 .menu-contact {
   margin-bottom: 64px;
 }
