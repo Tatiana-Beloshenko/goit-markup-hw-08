@@ -13,8 +13,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  //padding-top: 10px;
+  //padding-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   .nav-adress {
@@ -25,8 +25,8 @@
 
 /* шрифт,цвет логотипа */
 .main-nav__web {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--accent-color);
   font-family: Raleway;
   font-size: 24px;
@@ -35,20 +35,27 @@
 }
 
 .main-nav__logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #000000;
   font-family: Raleway;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.17;
 }
+@media screen and (min-width: 768px) {
+  .main-nav__web,
+  .main-nav__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .main-nav__web,
   .main-nav__logo {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 25px;
     font-size: 26px;
     line-height: 1.2;
   }

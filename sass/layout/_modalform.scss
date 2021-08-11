@@ -1,5 +1,5 @@
 .modal-form {
-  padding: 40px;
+  margin: 40px;
   @media screen and (max-width: 1199px) {
     max-width: 370px;
     min-height: 342px;
@@ -14,7 +14,7 @@
   text-align: center;
   color: #212121;
   @media screen and (max-width: 1199px) {
-    padding-right: 15px;
+    line-height: 1.5;
   }
 }
 .field-form {
