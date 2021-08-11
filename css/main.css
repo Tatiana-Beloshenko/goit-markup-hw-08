@@ -267,7 +267,7 @@ summary {
 }
 
 body {
-  max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
